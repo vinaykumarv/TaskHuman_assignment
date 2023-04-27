@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="22dp"
+            android:src="@drawable/ic_back"
+            app:contentDescription="@string/back_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/toolbar_settings_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/toolbar_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent = "true"
+                app:contentDescription="@string/settings_button" />
+
+            <TextView
+                android:id="@+id/toolbar_settings_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_button"
+                android:textColor="@color/text_color"
+                android:layout_below="@+id/toolbar_settings"
+                android:textSize="@dimen/toolbar_subtitle_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/color_accent"
+            android:textSize="@dimen/toolbar_title_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/toolbar_sub_title_layout"
+            app:layout_constraintLeft_toRightOf="@id/toolbar_back"
+            app:layout_constraintRight_toLeftOf="@id/toolbar_settings_layout"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <RelativeLayout
+            android:id="@+id/toolbar_sub_title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/toolbar_back"
+            app:layout_constraintRight_toLeftOf="@id/toolbar_settings_layout">
+
+            <TextView
+                android:id="@+id/toolbar_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credits"
+                android:textColor="@color/text_color_green"
+                android:textSize="@dimen/toolbar_subtitle_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/toolbar_credits_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5dp"
+                android:layout_marginEnd="@dimen/_5dp"
+                android:src="@drawable/ic_launcher"
+                android:layout_toRightOf="@+id/toolbar_sub_title"
+                app:contentDescription="@string/settings_button"/>
+
+            <TextView
+                android:id="@+id/toolbar_unlimited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unlimited"
+                android:textColor="@color/text_color_green"
+                android:textSize="@dimen/toolbar_subtitle_size"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/toolbar_credits_icon"/>
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

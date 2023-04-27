@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TaskHuman</string>
+    <string name="title_discover">Discover</string>
+    <string name="title_reconnect">Reconnect</string>
+    <string name="title_bookings">Bookings</string>
+    <string name="title_messages">Messages</string>
+    <string name="title_blogs">Blogs</string>
+    <string name="discover_fragment">DiscoverFragment</string>
+    <string name="reconnect_fragment">ReconnectFragment</string>
+    <string name="bookings_fragment">BookingsFragment</string>
+    <string name="messages_fragment">MessagesFragment</string>
+    <string name="blogs_fragment">BlogsFragment</string>
+
+    <string name="back_button">Back</string>
+    <string name="settings_button">Settings</string>
+    <string name="credits">Credits</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="booking_level">BookingLevel</string>
+    <string name="skill_name_default">Skill name default</string>
+    <string name="alarm">Alarm</string>
+    <string name="skill_end_time">End time</string>
+    <string name="skill_start_time">Start time</string>
+    <string name="skill_time_separator">-</string>
+    <string name="swipe_icon">Swipe icon</string>
+    <string name="add_to_favorite">Add to Favorites</string>
+    <string name="added">Added</string>
+    <string name="remove_favorite">Remove Favorite</string>
+    <string name="no_skills">No skills</string>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/icon_tint</item>
+        <item name="itemTextColor">@color/text_tint</item>
+    </style>
+
+    <style name="SwipeItem">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
